@@ -1,6 +1,9 @@
-var arr = ["rost","top","pop"];
-var res = [];
+var arr = ["rost", "top", 6];
+var i = 0;
 var ask = prompt("введите значение");
-res = ask + "," + arr;
 
-alert(res);
+while (i < arr.length) {
+  arr[arr.length -i] = arr[arr.length -i - 1];
+  i++;
+}
+arr[0] = ask;
